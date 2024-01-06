@@ -1,1 +1,17 @@
 /* add your styles here */
+.parent{
+    display:grid;
+    grid-template-columns: repeat(2,500px);
+    grid-column-gap:50px;
+    grid-row-gap:30px;
+    justify-content: center;
+
+}
+
+#image{
+    height: 60vh;
+    width: 40vw;
+}
+h3{
+    text-align: center;
+}
