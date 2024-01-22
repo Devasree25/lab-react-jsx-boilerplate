@@ -3,28 +3,20 @@ import "./App.css"
 import elephant from "./images/elephant.jpeg";
 
 export default class AppClass extends Component{
+  render(){
+    let imgarray = this.props.imageprop
   
-  imageData = ()=>{
-    let data = [
-      {
-        id:1,
-        img:elephant
-      },
-      {
-        id:2,
-        img:elephant
-      },
-      {
-        id:3,
-        img:elephant
-      },
-      {
-        id:4,
-        img:elephant
-      }
-    ]
-    return data;
-  }
 
-  // code here
+  return(
+    <div>
+      <h3>Kalvium Gallary</h3>
+     {
+        imgarray.map((element) => {
+          return <img id="image"src={element.img} />
+
+          
+        })};
+      </div>
+    )
+}
 }

@@ -1,16 +1,19 @@
 /* add your styles here */
 .parent{
     display:grid;
-    grid-template-columns: repeat(2,500px);
-    grid-column-gap:50px;
-    grid-row-gap:30px;
     justify-content: center;
+    row-gap: 20px;
+    column-gap: 300px;
 
 }
 
 #image{
-    height: 60vh;
+    height: 50vh;
     width: 40vw;
+    position: relative;
+    left: 140px;
+    
+   
 }
 h3{
     text-align: center;
